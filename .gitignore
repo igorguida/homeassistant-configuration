@@ -42,7 +42,7 @@ phue.conf
 cameras.yaml.streamHomeAssistant
 *.yaml~
 __pycache__
-/custom_components/bynary_sensor/__pycache__
+/custom_components/bynary_sensor/__pycache__/*
 /custom_components/sensor/__pycache__
 /custom_components/switch/__pycache__
 
