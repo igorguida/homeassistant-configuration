@@ -46,4 +46,23 @@ __pycache__
 /custom_components/sensor/__pycache__/**
 /custom_components/switch/__pycache__/**
 
+*.pid
+*.xml
+*.csr
+*.crt
+*.key
+*.conf
+*.pickle
+*.json
+.cloud
+home-assistant_v2.db
+*.db-journal
+*.db-shm
+*.db-wal
+deps
+ios.conf
+ipchange.yaml
+production_auth.json
+
+
 
