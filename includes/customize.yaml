@@ -1,0 +1,27 @@
+  switch.faretti_sala:
+      friendly_name: 'Faretti Sala'
+      icon: mdi:spotlight-beam
+  switch.luce_int_studio:
+      friendly_name: 'Faretti Armchair'
+      icon: mdi:spotlight-beam
+
+#  switch.tapparella_bonsai_a:
+#      friendly_name: 'Bonsai'
+#      icon: mdi:arrow-up-bold-box 
+#  switch.tapparella_bonsai_b:
+#      friendly_name: 'Bonsai'
+#      icon: mdi:arrow-down-bold-box 
+
+#  switch.tapparella_giardino_a:
+#      friendly_name: 'Giardino'
+#      icon: mdi:arrow-up-bold-box 
+#  switch.tapparella_giardino_b:
+#      friendly_name: 'Giardino'
+#      icon: mdi:arrow-down-bold-box 
+# switch.tapparella_sala_a:
+#     friendly_name: 'Armchair'
+#     icon: mdi:arrow-up-bold-box 
+# switch.tapparella_sala_b:
+#      friendly_name: 'Armchair'
+#      icon: mdi:arrow-down-bold-box
+

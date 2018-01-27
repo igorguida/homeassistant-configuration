@@ -1,0 +1,308 @@
+#- id: log_window_sensor
+#  alias: "Log sensore finestra"
+#  initial_state: 'off'
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.finestra_sala
+#      to: 'on'
+#  action:
+#    - service: logbook.log
+#      data:
+#        name: "Sensore Finestra"
+#        message: "motion detected"
+
+
+- id: spegni_luci_hue
+  alias: 'Spegnimento luci HUE 9:01'
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '09:00:00'
+  action:
+    - service: light.turn_off
+      entity_id: group.all_lights
+
+- id: spegni_luci_altre
+  alias: 'Spegnimento luci 9:00'
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '09:00:00'
+  action:
+    - service: switch.turn_off
+#      entity_id: group.luci 
+      entity_id: [switch.luce_int_pranzo, switch.luce_faretto_divanoigor, switch.luce_int_bagno, switch.luce_int_bagnomadda, switch.luce_int_cucina1, switch.luce_int_cucina2, switch.luce_int_igorniky, switch.luce_int_libreria, switch.luce_int_madda, switch.luce_int_nuovoingresso, switch.luce_int_sgabuzzino, switch.luce_int_specchiera, switch.luce_int_specmadda, switch.luce_int_studio, switch.luce_int_studioigor, switch.faretti_sala, switch.luce_faretto_divanoigor, switch.luce_faretto_divanoniki, switch.luce_down_bagnodisotto, switch.luce_down_cameranikyigordisotto, switch.luce_down_ingstudio, switch.luce_down_istudio, switch.luce_down_lavanderiadisotto, switch.luce_down_nstudio, switch.luce_down_specchierabagnodisotto, switch.luce_ext_giardino, switch.luce_ext_sopraporta]
+
+
+- id: spegni_luci_altre2
+  alias: 'Spegnimento luci 12:10'
+  initial_state: 'on'
+  trigger:
+    - platform: time
+      at: '12:10:00'
+  action:
+    - service: switch.turn_off
+#      entity_id: group.luci 
+      entity_id: [switch.luce_int_pranzo, switch.luce_faretto_divanoigor, switch.luce_int_bagno, switch.luce_int_bagnomadda, switch.luce_int_cucina1, switch.luce_int_cucina2, switch.luce_int_igorniky, switch.luce_int_libreria, switch.luce_int_madda, switch.luce_int_nuovoingresso, switch.luce_int_sgabuzzino, switch.luce_int_specchiera, switch.luce_int_specmadda, switch.luce_int_studio, switch.luce_int_studioigor, switch.faretti_sala, switch.luce_faretto_divanoigor, switch.luce_faretto_divanoniki, switch.luce_down_bagnodisotto, switch.luce_down_cameranikyigordisotto, switch.luce_down_ingstudio, switch.luce_down_istudio, switch.luce_down_lavanderiadisotto, switch.luce_down_nstudio, switch.luce_down_specchierabagnodisotto, switch.luce_ext_giardino, switch.luce_ext_sopraporta]
+
+- id: chiudi_taparella_madda
+  alias: 'Chiude tapparella Madda 22:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '22:00:00'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.tap_madda
+
+- id: chiudi_taparella_madda_estate
+  alias: 'Chiude tapparella Madda 23:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '23:00:00'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.tap_madda
+
+
+- id: apri_taparella_madda
+  alias: 'Apre tapparella  Madda 07:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '07:00:00'
+  action:
+    - service: cover.open_cover
+      entity_id: cover.tap_madda
+
+
+- id: apri_taparella_bagnomadda
+  alias: 'Apri tapparella Bagno Madda 07:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '07:00:00'
+  action:
+    - service: cover.open_cover
+      entity_id: cover.tap_bagnomadda
+
+- id: apri_taparella_salabonsaigiardino
+  alias: 'Apri tapparelle Sala Bonsai Giardino 08:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '08:00:00'
+  action:
+    - service: cover.open_cover
+      entity_id: [cover.tap_sala, cover.tap_bonsai, cover.tap_giardino]
+
+- id: apri_taparella_bonsa501
+  alias: 'Apre Bonsai StudioIgor Sala 00:15'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '00:15:00'
+  action:
+    - service: cover.open_cover
+      entity_id: [cover.tap_bonsai, cover.tap_sala, cover.tap_studioigor]
+
+
+- id: apri_taparella_502salabonsai
+  alias: 'Tapparelle metà Sala Bonsai StuIgor 00:16'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '00:17:00'
+  condition:
+    - condition: template
+      value_template: '{{ int(states.cover.tap_50bonsai.state) > 49 }}'
+  action:
+    - service: switch.turn_on
+      entity_id: [ switch.tapparella_bonsai_b, switch.tapparella_sala_b, switch.tapparella_studioigor_b ]
+    - delay: 7
+    - service: switch.toggle
+      entity_id: [ switch.tapparella_bonsai_b, switch.tapparella_sala_b, switch.tapparella_studioigor_b ]
+
+
+
+- id: apri_taparella_matrimoniale
+  alias: 'Apri tapparella Matrimoniale 07:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '07:00:00'
+  action:
+    - service: cover.open_cover
+      entity_id: cover.tap_igorniky
+
+
+- id: apri_taparella_bagno
+  alias: 'Apri tapparella Bagno 07:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '07:00:00'
+  action:
+    - service: cover.open_cover
+      entity_id: cover.tap_bagno
+
+
+
+- id: chiudi_taparelle
+  alias: 'Chiude tapparelle 24:00'
+  initial_state: 'off'
+  trigger:
+    - platform: time
+      at: '23:59:00'
+  action:
+    - service: cover.close_cover
+      entity_id: [cover.tap_bagnomadda,cover.tap_studioigor,cover.tap_sgabuzzino,cover.tap_matrimoniale,cover.tap_bagno]
+
+
+################################
+################################
+#
+#
+#
+
+
+
+
+################################
+### manual alarm panel
+################################
+
+- alias: Alarm Away
+  hide_entity: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.finestra_sala
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_bonsai
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_giardino
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_sgabuzzino
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_igorniky
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_bagnoigorniky
+      to: 'off'
+    - platform: state
+      entity_id: binary_sensor.finestra_taverna
+      to: 'off'
+    - platform: state
+      entity_id: 
+        - binary_sensor.tapparella_bagnoigorniky
+        - binary_sensor.tapparella_bonsai
+        - binary_sensor.tapparella_giardino
+        - binary_sensor.tapparella_igorniky
+        - binary_sensor.tapparella_madda
+        - binary_sensor.tapparella_sala
+        - binary_sensor.tapparella_sgabuzzino
+      to: 'off'
+    - platform: state
+      entity_id: 
+        - binary_sensor.sensore_finestragrandecucina
+        - binary_sensor.sensore_finestramadda
+        - binary_sensor.sensore_finestrapiccoladxcucina
+        - binary_sensor.sensore_finestrapiccolasxcucina
+        - binary_sensor.sensore_finestrarototraslante
+        - binary_sensor.sensore_finestrastudioigor
+        - binary_sensor.sensore_portaingresso
+        - binary_sensor.sensore_tapparellabagnomadda
+        - binary_sensor.sensore_tapparellamadda
+        - binary_sensor.sensore_tapparellastudioigor
+        - binary_sensor.sensore_blindata
+        - binary_sensor.sensore_finestrabagnomadda
+      to: 'on'
+  condition:
+    condition: state
+    entity_id: alarm_control_panel.antifurto
+    state: armed_away
+    #condition:
+      #condition: or
+      #conditions: 
+      #- condition: state
+      #  entity_id: alarm_control_panel.antifurto
+      #  state: armed_away
+      #- condition: state
+      #  entity_id: alarm_control_panel.antifurto
+      #  state: armed_home
+  action:
+    service: alarm_control_panel.alarm_trigger
+    entity_id: alarm_control_panel.antifurto
+
+
+
+##### quando siamo a casa da fare a settembre
+#- alias: Alarm Home
+#  hide_entity: True
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.finestra_sala
+#      state: 'off'
+#    - platform: state
+#      entity_id: binary_sensor.finestra_bonsai
+#      state: 'off'
+#    - platform: state
+#      entity_id: binary_sensor.finestra_giardino
+#      state: 'off'
+#  condition:
+#    condition: state
+#    entity_id: alarm_control_panel.antifurto
+#    state: armed_home
+#  action:
+#    service: alarm_control_panel.alarm_trigger
+#    entity_id: alarm_control_panel.antifurto
+
+#######################################
+### alarm light flash on e suona sirena
+#######################################
+
+- alias: Triggered Flash
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: alarm_control_panel.antifurto
+    to: 'triggered'
+  action:
+    - service: script.turn_on
+      #entity_id: script.light_flash
+      entity_id: script.suona_sirena
+    - service: notify.gmail
+      data:
+##        message: 'Home Alarm Triggered {{now.now().strftime("%Y%m%d-%H%M%S")}}'
+        message: 'Home Alarm Inserito {{now().strftime("%d%m%Y-%H%M%S")}}'
+
+
+
+################################
+### alarm light flash off
+################################
+
+- alias: Disarmed Off
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: alarm_control_panel.antifurto
+    to: 'disarmed'
+  action:
+    - service: script.turn_on
+      #entity_id: script.light_loop
+      entity_id: script.spegni_sirena
+    - service: notify.gmail
+      data:
+##        message: 'Home Alarm Reset {{now.now().strftime("%Y%m%d-%H%M%S")}}'
+        message: 'Home Alarm Disinserito {{now().strftime("%d%m%Y-%H%M%S")}}'
+
+################################
+
+
+

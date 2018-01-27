@@ -1,0 +1,446 @@
+homeassistant:
+  name: Casa Guida
+  latitude: !secret latitude_home
+  longitude: !secret longitude_home
+  elevation: 158
+  unit_system: metric
+  time_zone: Europe/Rome
+
+# Show links to resources in log and frontend
+#introduction:
+  customize: !include includes/customize.yaml
+  customize_glob: !include includes/switch_glob.yaml
+cover: !include includes/covers.yaml
+
+# Enables the frontend
+frontend:
+
+zoneminder:
+  host: '192.168.1.100'
+  path: '/zm/'
+  path_zms: /cgi-bin/nph-zms
+  ssl: False
+  username: !secret zm_username 
+  password: !secret zm_password
+
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+   api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+  exclude:
+    entities:
+      - light.hue_color_tele
+    domains:
+      - light
+#time:
+
+# Track the sun
+sun:
+
+recorder:
+  #purge_days: 30
+  db_url: !secret db_url_mio
+  exclude:
+    domains:
+      - automation
+      - weblink
+      - updater
+    entities:
+      - sun.sun   # Don't record sun data
+#      - sensor.last_boot
+#      - sensor.date
+
+
+# Text to speech
+tts:
+  platform: google
+  language: 'it'
+
+group: !include includes/groups.yaml
+automation: !include includes/automations.yaml
+script: !include includes/scripts.yaml
+
+
+maxcube:
+  host: 192.168.1.167
+  port: 62910
+
+climate:
+  - platform: generic_thermostat
+    name: studioigor
+    heater: switch.zona_riscaldamento_studio
+    target_sensor: sensor.temperature_studio
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: madda
+    heater: switch.zona_riscaldamento_madda
+    target_sensor: sensor.temperature_madda
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: bagnomadda
+    heater: switch.zona_riscaldamento_bagno
+    target_sensor: sensor.temperature_bagnomadda
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: cucina
+    heater: switch.zona_riscaldamento_cucina
+    target_sensor: sensor.temperature_cucina
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: design
+    heater: switch.zona_riscaldamento_sala
+    target_sensor: sensor.temperature_design
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: pianoterra
+    heater: switch.zona_riscaldamento_pianoterra
+    target_sensor: sensor.temperature_pianoterra
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+  - platform: generic_thermostat
+    name: primopiano
+    heater: switch.zona_riscaldamento_primopiano
+    target_sensor: sensor.temperature_primopiano
+    min_temp: 15
+    max_temp: 21
+    target_temp: 19
+    tolerance: 0.3
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+
+
+device_tracker:
+  - platform: unifi
+    host: 192.168.1.161
+    port: 8443
+    verify_ssl: false
+    username: !secret unifi_username
+    password: !secret unifi_password
+
+#escluso telecamere perchè gestite con zoneminder
+camera: !include includes/cameras.yaml
+
+light:
+ - platform: hue
+   host: 192.168.1.183
+   allow_unreachable: true
+
+media_player:
+ -  platform: cast
+    host: 192.168.1.173
+    name: Chromecast
+ -  platform: samsungtv
+    host: 192.168.1.177
+    name: TV Sala
+    mac: 60:6b:bd:b2:ef:50
+# -  platform: apple_tv
+#    host: 192.168.1.172
+#   login_id: LOGIN_ID
+#    start_off: false
+#    credentials: CREDENTIALS
+# -  platform: asus
+#    host: 192.168.1.166
+#    name: Asus - streaming
+
+
+switch:
+ - platform: relaymaster
+   url: http://192.168.1.101
+   username: !secret scheda101_username
+   password: !secret scheda101_password
+ - platform: relaymaster
+   url: http://192.168.1.102
+   username: !secret scheda102_username
+   password: !secret scheda102_password
+ - platform: relaymaster
+   url: http://192.168.1.103
+   username: !secret scheda103_username
+   password: !secret scheda103_password
+ - platform: relaymaster
+   url: http://192.168.1.104
+   username: !secret scheda104_username
+   password: !secret scheda104_password
+ - platform: relaymaster
+   url: http://192.168.1.105
+   username: !secret scheda105_username
+   password: !secret scheda105_password
+ - platform: relaymaster
+   url: http://192.168.1.106
+   username: !secret scheda106_username
+   password: !secret scheda106_password
+ - platform: relaymaster
+   url: http://192.168.1.107
+   username: !secret scheda107_username
+   password: !secret scheda107_password
+ - platform: relaymaster
+   url: http://192.168.1.108
+   username: !secret scheda108_username
+   password: !secret scheda108_password
+ - platform: relaymaster
+   url: http://192.168.1.109
+   username: !secret scheda109_username
+   password: !secret scheda109_password
+
+
+# - platform: broadlink
+#   host: 192.168.1.170
+#   mac: '34:EA:34:B2:F3:90'
+#   switches: 
+#     reciever: 
+#      friendly_name: 'Condizionatore'
+#      command_on: 'JgAaABweOR4bHhwdHB4dHRw6HhsdHR0dOTocAA0FAAAAAAAAAAAAAAAAAAA' 
+#      command_off: 'JgAaABweOR4bHhwdHB4dHRw6HhsdHR0dOTocAA0FAAAAAAAAAAAAAAAAAAA'
+
+
+binary_sensor:
+ - platform: relaymaster
+   url: http://192.168.1.101
+   username: !secret scheda101_username
+   password: !secret scheda101_password
+ - platform: relaymaster
+   url: http://192.168.1.102
+   username: !secret scheda102_username
+   password: !secret scheda102_password
+ - platform: relaymaster
+   url: http://192.168.1.103
+   username: !secret scheda103_username
+   password: !secret scheda103_password
+ - platform: relaymaster
+   url: http://192.168.1.104
+   username: !secret scheda104_username
+   password: !secret scheda104_password
+ - platform: relaymaster
+   url: http://192.168.1.105
+   username: !secret scheda105_username
+   password: !secret scheda105_password
+ - platform: relaymaster
+   url: http://192.168.1.106
+   username: !secret scheda106_username
+   password: !secret scheda106_password
+ - platform: relaymaster
+   url: http://192.168.1.107
+   username: !secret scheda107_username
+   password: !secret scheda107_password
+ - platform: relaymaster
+   url: http://192.168.1.108
+   username: !secret scheda108_username
+   password: !secret scheda108_password
+ - platform: relaymaster
+   url: http://192.168.1.109
+   username: !secret scheda109_username
+   password: !secret scheda109_password
+
+
+sensor:
+ - platform: relaymaster
+   url: http://192.168.1.101
+   username: !secret scheda101_username
+   password: !secret scheda101_password
+ - platform: relaymaster
+   url: http://192.168.1.102
+   username: !secret scheda102_username
+   password: !secret scheda102_password
+ - platform: relaymaster
+   url: http://192.168.1.103
+   username: !secret scheda103_username
+   password: !secret scheda103_password
+ - platform: relaymaster
+   url: http://192.168.1.105
+   username: !secret scheda105_username
+   password: !secret scheda105_password
+ - platform: relaymaster
+   url: http://192.168.1.106
+   username: !secret scheda106_username
+   password: !secret scheda106_password
+ - platform: relaymaster
+   url: http://192.168.1.107
+   username: !secret scheda107_username
+   password: !secret scheda107_password
+       
+
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_primopiano:                                                                                                                              
+        entity_id: sensor.sonda_p1                                                                                                                    
+        value_template: '{{ states.sensor.sonda_p1.state|float / 10 }}'                                                                               
+        friendly_name: 'Temperatura Primo Piano'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_pianoterra:                                                                                                                              
+        entity_id: sensor.sonda_p0                                                                                                                    
+        value_template: '{{ states.sensor.sonda_p0.state|float / 20 }}'                                                                               
+        friendly_name: 'Temperatura Piano Terra'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_madda:                                                                                                                              
+        entity_id: sensor.sonda_madda                                                                                                                    
+        value_template: '{{ states.sensor.sonda_madda.state|float / 20 }}'                                                                               
+        friendly_name: 'Temperatura Madda'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_studio:                                                                                                                              
+        entity_id: sensor.sonda_studio                                                                                                                    
+        value_template: '{{ states.sensor.sonda_studio.state|float / 20 }}'                                                                               
+        friendly_name: 'Temperatura Studio Igor'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_bagnomadda:                                                                                                                              
+        entity_id: sensor.sonda_bagno                                                                                                                    
+        value_template: '{{ states.sensor.sonda_bagno.state|float / 10 }}'                                                                               
+        friendly_name: 'Temperatura Bagno Madda'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_cucina:                                                                                                                              
+        entity_id: sensor.sonda_cucina                                                                                                                    
+        value_template: '{{ states.sensor.sonda_cucina.state|float / 20 }}'                                                                               
+        friendly_name: 'Temperatura Cucina'                                                                                                            
+        unit_of_measurement: '°C'
+  - platform: template                                                                                                                                
+    sensors:                                                                                                                                          
+      temperature_design:                                                                                                                              
+        entity_id: sensor.sonda_design                                                                                                                    
+        value_template: '{{ states.sensor.sonda_design.state|float / 20 }}'                                                                               
+        friendly_name: 'Temperatura Sala Design'                                                                                                            
+        unit_of_measurement: '°C'
+
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+      - 'time_date'
+      - 'time_utc'
+      - 'beat'
+
+
+# Weather Prediction
+  - platform: yr
+    name: Tempo Atmosferico
+    monitored_conditions:
+        - temperature
+        - symbol
+        - precipitation
+        - windSpeed
+        - pressure
+        - windDirection
+        - humidity
+        - fog
+        - cloudiness
+        - lowClouds
+        - mediumClouds
+        - highClouds
+        - dewpointTemperature
+
+zwave:
+   usb_path: /dev/ttyUSB0
+
+
+
+alarm_control_panel:
+  platform: manual
+  name: "Antifurto!"
+  code: !secret code_password
+  pending_time: 15
+  trigger_time: 1
+  disarm_after_trigger: false
+
+
+
+################################
+### notifica via email
+###############################
+
+
+notify:
+  - name: gmail
+    platform: smtp
+    server: smtp.gmail.com
+    port: 587
+    timeout: 15
+    sender: !secret alarm_sender
+    encryption: starttls
+    username: !secret alarm_username
+    password: !secret alarm_password
+    recipient:
+      - !secret prima_email
+      - !secret seconda_email
+    sender_name: Casa Guida Domotica
+    

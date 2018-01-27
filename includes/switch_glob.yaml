@@ -1,0 +1,15 @@
+
+  "switch.luce_int_*":
+     icon: mdi:lightbulb
+  "switch.luce_faretto_*":
+     icon: mdi:spotlight-beam
+  #"switch.tapparella_*_a":
+  #        icon: mdi:arrow-up-bold-box
+  #"switch.tapparella_*_b":
+  #        icon: mdi:arrow-down-bold-box
+  "sensor.sonda_*":
+     icon: mdi:thermometer
+  "switch.luce_down_*":
+     icon: mdi:spotlight-beam
+
+

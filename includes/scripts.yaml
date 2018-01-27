@@ -1,0 +1,46 @@
+
+  light_flash:
+    alias: Light flash on
+    sequence:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: group.luci_allarme
+      - delay:
+          seconds: 1
+      - service: homeassistant.turn_off
+        data:
+          entity_id: group.luci_allarme
+      - service: script.turn_on
+        data:
+          entity_id: script.light_loop
+  light_loop:
+    alias: Light flash loop
+    sequence:
+      - delay:
+          # time for flash light off
+          seconds: 2
+      - service: script.turn_on
+        data:
+          entity_id: script.light_flash
+      - service: script.turn_on
+        data:
+          entity_id: switch.consenso_sirena
+
+
+  suona_sirena:
+    alias: Suona Sirena
+    sequence:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: switch.consenso_sirena
+      - delay:
+          seconds: 10
+
+
+  spegni_sirena:
+    alias: Spegni Sirena
+    sequence:
+      - service: homeassistant.turn_off
+        data:
+          entity_id: switch.consenso_sirena
+

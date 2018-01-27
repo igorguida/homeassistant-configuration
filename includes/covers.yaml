@@ -1,0 +1,199 @@
+  - platform: template
+    covers: 
+      tap_sala:
+        friendly_name: 'Sala'
+        #value_template: "{{ states.binary_sensor.tapparella_sala.state }}"
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_sala_a
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sala_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_sala_b
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sala_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sala_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sala_b
+
+
+      tap_bonsai:
+        friendly_name: 'Bonsai'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bonsai_a
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bonsai_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bonsai_b
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bonsai_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bonsai_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bonsai_b
+
+      tap_giardino:
+        friendly_name: 'Giardino'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_giardino_a
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_giardino_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_giardino_b
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_giardino_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_giardino_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_giardino_b
+
+
+      tap_matrimoniale:
+        friendly_name: 'Matrimoniale'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_igorniky_a
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_igorniky_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_igorniky_b
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_igorniky_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_igorniky_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_igorniky_b
+
+
+      tap_bagno:
+        friendly_name: 'Bagno'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bagno_a
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bagno_b
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno_b
+
+
+      tap_bagnomadda:
+        friendly_name: 'Bagno Madda'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bagno1_a
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno1_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_bagno1_b
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno1_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno1_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_bagno1_b
+
+
+      tap_madda:
+        friendly_name: 'Madda'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_madda_a
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_madda_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_madda_b
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_madda_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_madda_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_madda_b
+
+
+      tap_sgabuzzino:
+        friendly_name: 'Sgabuzzino'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_sgabuzzino_a
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sgabuzzino_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_sgabuzzino_b
+          - delay: 00:00:20
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sgabuzzino_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sgabuzzino_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_sgabuzzino_b
+
+
+      tap_studioigor:
+        friendly_name: 'Studio Igor'
+        position_template: 50
+        open_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_studioigor_a
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_studioigor_a
+        close_cover:
+          - service: switch.turn_on
+            entity_id: switch.tapparella_studioigor_b
+          - delay: 00:00:25
+          - service: switch.turn_off
+            entity_id: switch.tapparella_studioigor_b
+        stop_cover:
+          - service: switch.turn_off
+            entity_id: switch.tapparella_studioigor_a
+          - service: switch.turn_off
+            entity_id: switch.tapparella_studioigor_b
+
