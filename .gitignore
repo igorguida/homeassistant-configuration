@@ -41,5 +41,5 @@ phue.conf
 .uuid
 cameras.yaml.streamHomeAssistant
 *.yaml~
-
+__pycache__
 
