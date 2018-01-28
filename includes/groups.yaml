@@ -45,11 +45,11 @@
     view: yes
     entities:
       - climate.bagno_nikyigor_bagnonikyigor
-      - climate.bagnoospiti_bagnoospiti
+      - climate.bagnotaverna_bagnotaverna 
       - climate.salatelevisione_salatelevisione
       - climate.salabonsai_salabonsai
       - climate.sgabuzzino_sgabuzzino
-      - climate.stanzaletto_stanzaletto
+      - climate.stanzaigorniky_stanzaigorniky
       - climate.stanza_ospiti_stanza_ospiti
       - climate.studio_nico_studionico
       - climate.studioigor
@@ -115,7 +115,7 @@
     entities:
       - switch.luce_int_igorniky
       - switch.presa_igorniky
-      - climate.stanzaletto_stanzaletto
+      - climate.stanzaigorniky_stanzaigorniky
       - cover.tap_matrimoniale 
 
   stanza_madda:
@@ -211,7 +211,7 @@
       - switch.luce_down_bagnodisotto
       - switch.luce_down_specchierabagnodisotto
       - switch.luce_down_lavanderiadisotto
-      - climate.bagnoospiti_bagnoospiti
+      - climate.bagnotaverna_bagnotaverna
 
   stanzaospiti:
     name: "Stanza Ospiti"
