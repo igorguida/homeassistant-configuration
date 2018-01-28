@@ -49,6 +49,18 @@ conversation:
 # Enables support for tracking state changes over time.
 history:
 
+logger:
+  default: critical
+  logs:
+    homeassistant.components: info
+    homeassistant.components.rfxtrx: debug
+    homeassistant.components.device_tracker: critical
+    homeassistant.components.camera: critical
+    homeassistant.components.binary_sensor: critical
+    homeassistant.components.sensor: critical
+    homeassistant.components.switch: critical
+
+
 # View all events in a logbook
 logbook:
   exclude:
