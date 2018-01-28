@@ -72,6 +72,14 @@
   trigger:
     - platform: time
       at: '07:00:00'
+      condition:
+      - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   action:
     - service: cover.open_cover
       entity_id: cover.tap_madda
@@ -83,6 +91,14 @@
   trigger:
     - platform: time
       at: '07:00:00'
+      condition:
+      - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   action:
     - service: cover.open_cover
       entity_id: cover.tap_bagnomadda
@@ -93,6 +109,14 @@
   trigger:
     - platform: time
       at: '08:00:00'
+      condition:
+      - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   action:
     - service: cover.open_cover
       entity_id: [cover.tap_sala, cover.tap_bonsai, cover.tap_giardino]
@@ -132,6 +156,14 @@
   trigger:
     - platform: time
       at: '07:00:00'
+      condition:
+      - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   action:
     - service: cover.open_cover
       entity_id: cover.tap_igorniky
@@ -143,6 +175,14 @@
   trigger:
     - platform: time
       at: '07:00:00'
+      condition:
+      - condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
   action:
     - service: cover.open_cover
       entity_id: cover.tap_bagno
