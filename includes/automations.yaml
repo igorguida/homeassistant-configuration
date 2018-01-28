@@ -68,12 +68,12 @@
 
 - id: apri_taparella_madda
   alias: 'Apre tapp  Madda 07:00'
-  initial_state: 'off'
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '07:00:00'
-      condition:
-      - condition: time
+  condition:
+    - condition: time
       weekday:
       - mon
       - tue
@@ -87,12 +87,12 @@
 
 - id: apri_taparella_bagnomadda
   alias: 'Apre tapp Bagno Madda 07:00'
-  initial_state: 'off'
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '07:00:00'
-      condition:
-      - condition: time
+  condition:
+    - condition: time
       weekday:
       - mon
       - tue
@@ -109,8 +109,8 @@
   trigger:
     - platform: time
       at: '08:00:00'
-      condition:
-      - condition: time
+  condition:
+    - condition: time
       weekday:
       - mon
       - tue
@@ -152,12 +152,12 @@
 
 - id: apri_taparella_matrimoniale
   alias: 'Apri tapp Matrimoniale 07:00'
-  initial_state: 'off'
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '07:00:00'
-      condition:
-      - condition: time
+  condition:
+    - condition: time
       weekday:
       - mon
       - tue
@@ -171,12 +171,12 @@
 
 - id: apri_taparella_bagno
   alias: 'Apri tapp Bagno 07:00'
-  initial_state: 'off'
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '07:00:00'
-      condition:
-      - condition: time
+  condition:
+    - condition: time
       weekday:
       - mon
       - tue
@@ -191,7 +191,7 @@
 
 - id: chiudi_taparelle
   alias: 'Chiude tapp 24:00'
-  initial_state: 'off'
+  initial_state: 'on'
   trigger:
     - platform: time
       at: '23:59:00'

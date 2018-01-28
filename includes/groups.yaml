@@ -25,19 +25,19 @@
         name: Automations
         view: yes
         entities:
-          - automation.apre_tapparella__madda_0700
-          - automation.apri_tapparella_bagno_madda_0700
-          - automation.chiude_tapparella_madda_2200
-          - automation.chiude_tapparella_madda_2300
-          - automation.apri_tapparella_matrimoniale_0700
-          - automation.apri_tapparella_bagno_0700
-          - automation.chiude_tapparelle_2400
-          - automation.spegnimento_luci_hue_901
-          - automation.spegnimento_luci_900
-          - automation.spegnimento_luci_1210
-          - automation.apri_tapparelle_sala_bonsai_giardino_0800
-          - automation.apre_bonsai_studioigor_sala_0015
-          - automation.tapparelle_meta_sala_bonsai_stuigor_0016
+          - automation.apre_tapp__madda_0700
+          - automation.apre_tapp_bagno_madda_0700
+          - automation.chiude_tapp_madda_2200
+          - automation.chiude_tapp_madda_2300
+          - automation.apri_tapp_matrimoniale_0700
+          - automation.apri_tapp_bagno_0700
+          - automation.chiude_tapp_2400
+          - automation.spegni_luci_hue_901
+          - automation.spegni_luci_900
+          - automation.spegni_luci_1210
+          - automation.apri_tapp_sala_bonsai_giardino_0800
+          - automation.apre_bonsai_stuigor_sala_0015
+          - automation.tapp_meta_sala_bonsai_stuigor_0016
 
 
   climate:

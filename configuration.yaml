@@ -331,70 +331,75 @@ sensor:
    password: !secret scheda107_password
        
 
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
-      temperature_primopiano:                                                                                                                              
-        entity_id: sensor.sonda_p1                                                                                                                    
-        value_template: '{{ states.sensor.sonda_p1.state|float / 10 }}'                                                                               
-        friendly_name: 'Temperatura Primo Piano'                                                                                                            
-        unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
-      temperature_pianoterra:                                                                                                                              
+ - platform: template                                                                                                                                
+   sensors:
+     temperature_primopiano:                                                                                                                              
+          entity_id: sensor.sonda_p1                                                                                                                    
+          value_template: '{{ states.sensor.sonda_p1.state|float / 10 }}'                                                                               
+          friendly_name: 'Temperatura Primo Piano'                                                                                                            
+          unit_of_measurement: '°C'
+ - platform: template
+   sensors:     
+     temperature_pianoterra:                                                                                                                              
         entity_id: sensor.sonda_p0                                                                                                                    
         value_template: '{{ states.sensor.sonda_p0.state|float / 20 }}'                                                                               
         friendly_name: 'Temperatura Piano Terra'                                                                                                            
         unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
-      temperature_madda:                                                                                                                              
+  
+ - platform: template
+   sensors:
+     temperature_madda:                                                                                                                              
         entity_id: sensor.sonda_madda                                                                                                                    
         value_template: '{{ states.sensor.sonda_madda.state|float / 20 }}'                                                                               
         friendly_name: 'Temperatura Madda'                                                                                                            
         unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
+
+ - platform: template
+   sensors:                                                                                                                                          
       temperature_studio:                                                                                                                              
         entity_id: sensor.sonda_studio                                                                                                                    
         value_template: '{{ states.sensor.sonda_studio.state|float / 20 }}'                                                                               
         friendly_name: 'Temperatura Studio Igor'                                                                                                            
         unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
+
+ - platform: template
+   sensors:                                                                                                                                          
       temperature_bagnomadda:                                                                                                                              
         entity_id: sensor.sonda_bagno                                                                                                                    
         value_template: '{{ states.sensor.sonda_bagno.state|float / 10 }}'                                                                               
         friendly_name: 'Temperatura Bagno Madda'                                                                                                            
         unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
+  
+ - platform: template
+   sensors:                                                                                                                                          
       temperature_cucina:                                                                                                                              
         entity_id: sensor.sonda_cucina                                                                                                                    
         value_template: '{{ states.sensor.sonda_cucina.state|float / 20 }}'                                                                               
         friendly_name: 'Temperatura Cucina'                                                                                                            
         unit_of_measurement: '°C'
-  - platform: template                                                                                                                                
-    sensors:                                                                                                                                          
+  
+ - platform: template
+   sensors:                                                                                                                                          
       temperature_design:                                                                                                                              
         entity_id: sensor.sonda_design                                                                                                                    
         value_template: '{{ states.sensor.sonda_design.state|float / 20 }}'                                                                               
         friendly_name: 'Temperatura Sala Design'                                                                                                            
         unit_of_measurement: '°C'
 
-  - platform: time_date
-    display_options:
-      - 'time'
-      - 'date'
-      - 'date_time'
-      - 'time_date'
-      - 'time_utc'
-      - 'beat'
+ - platform: time_date
+   display_options: 
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'time_date'
+    - 'time_utc'
+    - 'beat'
 
 
 # Weather Prediction
-  - platform: yr
-    name: Tempo Atmosferico
-    monitored_conditions:
+ - platform: yr
+   name: Tempo Atmosferico
+   monitored_conditions:
         - temperature
         - symbol
         - precipitation
