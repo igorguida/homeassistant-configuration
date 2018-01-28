@@ -68,11 +68,6 @@ logbook:
       - light.hue_color_tele
     domains:
       - light
-#time:
-
-# Track the sun
-sun:
-
 recorder:
   #purge_days: 30
   db_url: !secret db_url_mio
@@ -85,6 +80,13 @@ recorder:
       - sun.sun   # Don't record sun data
 #      - sensor.last_boot
 #      - sensor.date
+
+#time:
+
+# Track the sun
+sun:
+
+
 
 
 # Text to speech
