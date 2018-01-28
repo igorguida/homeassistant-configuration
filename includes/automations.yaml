@@ -13,7 +13,7 @@
 
 
 - id: spegni_luci_hue
-  alias: 'Spegnimento luci HUE 9:01'
+  alias: 'Spegni luci HUE 9:01'
   initial_state: 'on'
   trigger:
     - platform: time
@@ -23,7 +23,7 @@
       entity_id: group.all_lights
 
 - id: spegni_luci_altre
-  alias: 'Spegnimento luci 9:00'
+  alias: 'Spegni luci 9:00'
   initial_state: 'on'
   trigger:
     - platform: time
@@ -35,7 +35,7 @@
 
 
 - id: spegni_luci_altre2
-  alias: 'Spegnimento luci 12:10'
+  alias: 'Spegni luci 12:10'
   initial_state: 'on'
   trigger:
     - platform: time
@@ -46,7 +46,7 @@
       entity_id: [switch.luce_int_pranzo, switch.luce_faretto_divanoigor, switch.luce_int_bagno, switch.luce_int_bagnomadda, switch.luce_int_cucina1, switch.luce_int_cucina2, switch.luce_int_igorniky, switch.luce_int_libreria, switch.luce_int_madda, switch.luce_int_nuovoingresso, switch.luce_int_sgabuzzino, switch.luce_int_specchiera, switch.luce_int_specmadda, switch.luce_int_studio, switch.luce_int_studioigor, switch.faretti_sala, switch.luce_faretto_divanoigor, switch.luce_faretto_divanoniki, switch.luce_down_bagnodisotto, switch.luce_down_cameranikyigordisotto, switch.luce_down_ingstudio, switch.luce_down_istudio, switch.luce_down_lavanderiadisotto, switch.luce_down_nstudio, switch.luce_down_specchierabagnodisotto, switch.luce_ext_giardino, switch.luce_ext_sopraporta]
 
 - id: chiudi_taparella_madda
-  alias: 'Chiude tapparella Madda 22:00'
+  alias: 'Chiude tapp Madda 22:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -56,7 +56,7 @@
       entity_id: cover.tap_madda
 
 - id: chiudi_taparella_madda_estate
-  alias: 'Chiude tapparella Madda 23:00'
+  alias: 'Chiude tapp Madda 23:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -67,7 +67,7 @@
 
 
 - id: apri_taparella_madda
-  alias: 'Apre tapparella  Madda 07:00'
+  alias: 'Apre tapp  Madda 07:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -86,7 +86,7 @@
 
 
 - id: apri_taparella_bagnomadda
-  alias: 'Apri tapparella Bagno Madda 07:00'
+  alias: 'Apre tapp Bagno Madda 07:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -104,7 +104,7 @@
       entity_id: cover.tap_bagnomadda
 
 - id: apri_taparella_salabonsaigiardino
-  alias: 'Apri tapparelle Sala Bonsai Giardino 08:00'
+  alias: 'Apre tapp Sala Bonsai Giardino 08:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -122,7 +122,7 @@
       entity_id: [cover.tap_sala, cover.tap_bonsai, cover.tap_giardino]
 
 - id: apri_taparella_bonsa501
-  alias: 'Apre Bonsai StudioIgor Sala 00:15'
+  alias: 'Apre Bonsai StuIgor Sala 00:15'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -133,7 +133,7 @@
 
 
 - id: apri_taparella_502salabonsai
-  alias: 'Tapparelle metà Sala Bonsai StuIgor 00:16'
+  alias: 'Tapp metà Sala Bonsai StuIgor 00:16'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -151,7 +151,7 @@
 
 
 - id: apri_taparella_matrimoniale
-  alias: 'Apri tapparella Matrimoniale 07:00'
+  alias: 'Apri tapp Matrimoniale 07:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -170,7 +170,7 @@
 
 
 - id: apri_taparella_bagno
-  alias: 'Apri tapparella Bagno 07:00'
+  alias: 'Apri tapp Bagno 07:00'
   initial_state: 'off'
   trigger:
     - platform: time
@@ -190,7 +190,7 @@
 
 
 - id: chiudi_taparelle
-  alias: 'Chiude tapparelle 24:00'
+  alias: 'Chiude tapp 24:00'
   initial_state: 'off'
   trigger:
     - platform: time
