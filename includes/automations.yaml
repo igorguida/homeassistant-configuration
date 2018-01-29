@@ -345,4 +345,48 @@
 ################################
 
 
+############################
+# caloriferi/riscaldamento #
+############################
 
+- alias: Wake up
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '06:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.studioigor
+      data:
+        temperature: 21
+        operation_mode: Heat
+
+- alias: Go to work
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '23:50:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.studioigor
+      data:
+        temperature: 21
+        operation_mode: Heat
