@@ -349,7 +349,7 @@
 # caloriferi/riscaldamento #
 ############################
 
-- alias: Wake up
+- alias: Mattino start
   initial_state: True
   hide_entity: False
   trigger:
@@ -365,17 +365,17 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: climate.studioigor
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
       data:
         temperature: 21
         operation_mode: Heat
 
-- alias: Go to work
+- alias: Mattino stop
   initial_state: True
   hide_entity: False
   trigger:
     platform: time
-    at: '23:50:00'
+    at: '08:30:00'
   condition:
     condition: time
     weekday:
@@ -386,7 +386,92 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: climate.studioigor
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
       data:
-        temperature: 21
+        temperature: 18
+        operation_mode: Idle
+
+
+- alias: Pomeriggio start
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '12:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      data:
+        temperature: 19,5
         operation_mode: Heat
+
+- alias: Pomeriggio stop
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '14:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      data:
+        temperature: 18
+        operation_mode: Idle
+
+- alias: Sera start
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '17:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      data:
+        temperature: 19,5
+        operation_mode: Heat
+
+- alias: Sera stop
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '20:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      data:
+        temperature: 18
+        operation_mode: Idle
