@@ -24,6 +24,7 @@
   automations:
         name: Automations
         view: yes
+        icon: mdi:robot
         entities:
           - automation.apre_tapp__madda_0700
           - automation.apre_tapp_bagno_madda_0700
@@ -43,6 +44,7 @@
   climate:
     name: Clima
     view: yes
+    icon: mdi:thermometer-lines
     entities:
       - climate.bagno_nikyigor_bagnonikyigor
       - climate.bagnotaverna_bagnotaverna 
@@ -77,6 +79,7 @@
   sala:
     name: Sala
     view: yes
+    icon: mdi:sofa
     entities:
       - light.sala
       - light.libreria
@@ -191,6 +194,7 @@
   taverna:
     name: Taverna
     view: yes
+    icon: mdi:stairs
     entities:
       - group.bagnotaverna
       - group.stanzaospiti
@@ -233,6 +237,7 @@
   luci:
     name: Luci
     view: yes
+    icon: mdi:lightbulb
     entities:
       - light.sala
       - light.libreria
@@ -292,6 +297,7 @@
   motoritap:
     name: MotTap
     view: yes
+    icon: mdi:apple-finder
     entities:
       - switch.tapparella_bagno1_a
       - switch.tapparella_bagno1_b
@@ -315,6 +321,7 @@
   tapparelle:
     name: Tapparelle
     view: yes
+    icon: mdi:blinds
     entities:
       - cover.tap_madda
       - cover.tap_bagnomadda
@@ -330,6 +337,7 @@
   prese:
     name: Prese
     view: yes
+    icon: mdi:flash
     entities:
       - switch.presa_cameraospiti
       - switch.presa_cappa
@@ -345,6 +353,7 @@
   sensori:
     name: Sensori
     view: yes
+    icon: mdi:gauge
     entities: 
       - binary_sensor.anomalia_radio 
       - binary_sensor.antimanomissione 
@@ -434,6 +443,7 @@
   camera:
     name: Videocamere
     view: yes
+    icon: mdi:camera
     entities:
       - camera.matrbagnosgab 
       - camera.boxgiardino
