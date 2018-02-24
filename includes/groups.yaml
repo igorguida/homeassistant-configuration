@@ -26,7 +26,7 @@
         view: yes
         icon: mdi:robot
         entities:
-          - risc_mattino_start
+          - automation.risc_mattino_start
           - automation.apre_tapp__madda_0700
           - automation.apre_tapp_bagno_madda_0700
           - automation.chiude_tapp_madda_2200
