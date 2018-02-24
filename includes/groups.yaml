@@ -26,7 +26,12 @@
         view: yes
         icon: mdi:robot
         entities:
-          - automation.risc_mattino_start
+          - automation.clima_mattino_start
+          - automation.clima_mattino_stop
+          - automation.clima_pomeriggio_start
+          - automation.clima_pomeriggio_stop
+          - automation.clima_sera_start
+          - automation.clima_sera_stop
           - automation.apre_tapp__madda_0700
           - automation.apre_tapp_bagno_madda_0700
           - automation.chiude_tapp_madda_2200

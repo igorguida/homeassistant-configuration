@@ -349,8 +349,7 @@
 ############################
 # caloriferi/riscaldamento #
 ############################
-- id: risc_mattino_start
-  alias: 'Mattino start'
+- alias: 'Clima Mattino start'
   initial_state: True
   hide_entity: False
   trigger:
@@ -371,7 +370,7 @@
         temperature: 21
         operation_mode: Heat
 
-- alias: Mattino stop
+- alias: 'Clima Mattino stop'
   initial_state: True
   hide_entity: False
   trigger:
@@ -393,7 +392,7 @@
         operation_mode: Heat
 
 
-- alias: Pomeriggio start
+- alias: 'Clima Pomeriggio start'
   initial_state: True
   hide_entity: False
   trigger:
@@ -414,7 +413,7 @@
         temperature: 19,5
         operation_mode: Heat
 
-- alias: Pomeriggio stop
+- alias: 'Clima Pomeriggio stop'
   initial_state: True
   hide_entity: False
   trigger:
@@ -435,7 +434,7 @@
         temperature: 18
         operation_mode: Heat
 
-- alias: Sera start
+- alias: 'Clima Sera start'
   initial_state: True
   hide_entity: False
   trigger:
@@ -456,7 +455,7 @@
         temperature: 19,5
         operation_mode: Heat
 
-- alias: Sera stop
+- alias: 'Clima Sera stop'
   initial_state: True
   hide_entity: False
   trigger:
