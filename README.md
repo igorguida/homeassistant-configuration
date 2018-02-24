@@ -2,7 +2,7 @@
 
 Home assistant Configuration (YAMLs)
 
-This is my Home Assistant Configuration created with hasbian on a Raspberry Pi 3.
+This is my Home Assistant Configuration created with hasbian on a Raspberry Pi 3 model B.
 
 
 - Android Devices (iPads, iPods, iPhones)
