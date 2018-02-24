@@ -410,7 +410,7 @@
     - service: climate.set_temperature
       entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
       data:
-        temperature: 19,5
+        temperature: 19
         operation_mode: Heat
 
 - alias: 'Clima Pomeriggio stop'
