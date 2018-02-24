@@ -231,7 +231,7 @@
     - platform: state
       entity_id: binary_sensor.finestra_igorniky
       to: 'off'
-      
+
     - platform: state
       entity_id: binary_sensor.finestra_bagnoigorniky
       to: 'off'
@@ -350,7 +350,7 @@
 # caloriferi/riscaldamento #
 ############################
 - id: risc_mattino_start
-  alias: Mattino start
+  alias: 'Mattino start'
   initial_state: True
   hide_entity: False
   trigger:
