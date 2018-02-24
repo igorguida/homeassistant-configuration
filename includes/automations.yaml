@@ -348,7 +348,7 @@
 ############################
 # caloriferi/riscaldamento #
 ############################
-
+- id: risc_mattino_start
 - alias: Mattino start
   initial_state: True
   hide_entity: False
