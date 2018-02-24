@@ -166,7 +166,7 @@
       - fri
   action:
     - service: cover.open_cover
-      entity_id: cover.tap_igorniky
+      entity_id: cover.tap_matrimoniale
 
 
 - id: apri_taparella_bagno
