@@ -231,6 +231,7 @@
     - platform: state
       entity_id: binary_sensor.finestra_igorniky
       to: 'off'
+      
     - platform: state
       entity_id: binary_sensor.finestra_bagnoigorniky
       to: 'off'
