@@ -100,8 +100,8 @@ script: !include includes/scripts.yaml
 
 
 maxcube:
-  host: 192.168.1.167
-  port: 62910
+  gateways:
+    - host: 192.168.1.167
 
 climate:
   - platform: generic_thermostat
