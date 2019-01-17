@@ -55,7 +55,7 @@
       - climate.bagno_nikyigor_bagnonikyigor
       - climate.bagnotaverna_bagnotaverna 
       - climate.salatelevisione_salatelevisione
-      - climate.salabonsai_salabonsai
+      - climate.sala_bonsai
       - climate.sgabuzzino_sgabuzzino
       - climate.stanzaigorniky_stanzaigorniky
       - climate.stanza_ospiti_stanza_ospiti
@@ -94,7 +94,7 @@
       - light.hue_color_wifi
       - light.hue_color_tele
       - climate.salatelevisione_salatelevisione
-      - climate.salabonsai_salabonsai
+      - climate.sala_bonsai
       - climate.design
       - media_player.tv_sala
       - media_player.salottoigor
