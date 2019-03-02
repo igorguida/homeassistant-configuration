@@ -1,0 +1,170 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "edb785f1afeec4e108230b124f33c21952078486afe599f6dd6d460eef26c848"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "remote.apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "edb785f1afeec4e108230b124f33c21952078486afe599f6dd6d460eef26c848"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.ue46d7000_ue46d7000",
+                "name": null,
+                "platform": "samsungtv",
+                "unique_id": "7b12682b-8258-7979-5e28-d7be9a4749fc"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_dsa02203_z_stick_s2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "device_id": "1590a17c64e749559ada20fe3570c8c4",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_tele",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:21:20:26-0b"
+            },
+            {
+                "config_entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "device_id": "c3230be7067a49eca830831f3da942e0",
+                "disabled_by": null,
+                "entity_id": "light.lampada_tiffany",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:59:2c:c4-0b"
+            },
+            {
+                "config_entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "device_id": "bd658aa4adb540bb801c8293b0786c07",
+                "disabled_by": null,
+                "entity_id": "light.lightstrip_cucina",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:00:ca:4f:9a-0b"
+            },
+            {
+                "config_entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "device_id": "a488b4a7d08e4d3a978a5fae8792ae74",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_wifi",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:21:0b:cf-0b"
+            },
+            {
+                "config_entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "device_id": "38104c8f8e8046159b33d33b12c33fe4",
+                "disabled_by": null,
+                "entity_id": "light.lampada_legno",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:59:45:ed-0b"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "caf78469b5544b8c9b6fb6880c37b3db",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_bytes_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_bytes_sent"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "fe74d31ec6454ab9aa83cbbc6fbc4d16",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_packets_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets_sent"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "966005d1de8c40c8b04ce976a6526a10",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_kbyte_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_kbyte/sec_received"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "4a1a255eda61434ebc588835e460b37a",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_packets_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets_received"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "0b5b08d24f574295ba67eba6777032cc",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_packets_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets/sec_sent"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "e3d767581d44445f8f5cc27c73e87351",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_bytes_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_bytes_received"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "6479759c5e7b4aa7849628dc88a757e1",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_packets_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets/sec_received"
+            },
+            {
+                "config_entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "device_id": "7c63947a994b44de902b82d5971b5fea",
+                "disabled_by": null,
+                "entity_id": "sensor.upnp_device_kbyte_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_kbyte/sec_sent"
+            },
+            {
+                "config_entry_id": "4215030905604c26aef900f4b5081539",
+                "device_id": "5e32c0bf32bb476d9c6f7f526194306c",
+                "disabled_by": null,
+                "entity_id": "media_player.salottoigor",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "38b36a37-faaf-fe39-cb9e-77fb86a0d2f3"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

@@ -1,0 +1,53 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": null,
+                    "usb_path": "/dev/ttyUSB0"
+                },
+                "domain": "zwave",
+                "entry_id": "4d43813d900a491ca192a6e1e600b202",
+                "source": "import",
+                "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "001788FFFE231C5A",
+                    "host": "192.168.1.183",
+                    "username": "eUBfy0Ebv54B23s0SfIMoDvvV5KDMcyMk9p8-kxM"
+                },
+                "domain": "hue",
+                "entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "source": "discovery",
+                "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "udn": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70"
+                },
+                "domain": "upnp",
+                "entry_id": "418fc1573713485e860c2cd26eb574f7",
+                "source": "discovery",
+                "title": "UPnP/IGD",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "4215030905604c26aef900f4b5081539",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

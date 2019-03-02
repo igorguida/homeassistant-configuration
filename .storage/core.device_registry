@@ -1,0 +1,322 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:23:1c:5a"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "7c639ed188794d7d856b702336db411b",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFE231C5A"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "sw_version": "1806051111"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [],
+                "hub_device_id": "7c639ed188794d7d856b702336db411b",
+                "id": "1590a17c64e749559ada20fe3570c8c4",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:21:20:26-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Hue color tele",
+                "sw_version": "5.105.0.21536"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [],
+                "hub_device_id": "7c639ed188794d7d856b702336db411b",
+                "id": "c3230be7067a49eca830831f3da942e0",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:10:59:2c:c4-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Lampada tiffany",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [],
+                "hub_device_id": "7c639ed188794d7d856b702336db411b",
+                "id": "bd658aa4adb540bb801c8293b0786c07",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:00:ca:4f:9a-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue lightstrip",
+                "name": "lightstrip Cucina",
+                "sw_version": "5.127.1.26581"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [],
+                "hub_device_id": "7c639ed188794d7d856b702336db411b",
+                "id": "a488b4a7d08e4d3a978a5fae8792ae74",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:21:0b:cf-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Hue color wifi",
+                "sw_version": "5.105.0.21536"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "85d421e0400546b5877d0699ffecc8af"
+                ],
+                "connections": [],
+                "hub_device_id": "7c639ed188794d7d856b702336db411b",
+                "id": "38104c8f8e8046159b33d33b12c33fe4",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:10:59:45:ed-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Lampada legno",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "ac5bed301916409398405e436ea3d16a",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70"
+                    ]
+                ],
+                "manufacturer": "ASKEY",
+                "model": null,
+                "name": "UPNP Device",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "caf78469b5544b8c9b6fb6880c37b3db",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_bytes_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device bytes sent",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "fe74d31ec6454ab9aa83cbbc6fbc4d16",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device packets sent",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "966005d1de8c40c8b04ce976a6526a10",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_kbyte/sec_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device kbyte/sec received",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "4a1a255eda61434ebc588835e460b37a",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device packets received",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "0b5b08d24f574295ba67eba6777032cc",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets/sec_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device packets/sec sent",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "e3d767581d44445f8f5cc27c73e87351",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_bytes_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device bytes received",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "6479759c5e7b4aa7849628dc88a757e1",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_packets/sec_received"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device packets/sec received",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "418fc1573713485e860c2cd26eb574f7"
+                ],
+                "connections": [],
+                "hub_device_id": "ac5bed301916409398405e436ea3d16a",
+                "id": "7c63947a994b44de902b82d5971b5fea",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70_kbyte/sec_sent"
+                    ]
+                ],
+                "manufacturer": null,
+                "model": null,
+                "name": "UPNP Device kbyte/sec sent",
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4215030905604c26aef900f4b5081539"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "5e32c0bf32bb476d9c6f7f526194306c",
+                "identifiers": [
+                    [
+                        "cast",
+                        "38b36a37faaffe39cb9e77fb86a0d2f3"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "SalottoIgor",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

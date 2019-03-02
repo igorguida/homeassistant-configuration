@@ -350,7 +350,7 @@
 # caloriferi/riscaldamento #
 ############################
 - alias: 'Clima Mattino start'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -365,13 +365,13 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 21
         operation_mode: Heat
 
 - alias: 'Clima Mattino stop'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -386,14 +386,14 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 18
         operation_mode: Heat
 
 
 - alias: 'Clima Pomeriggio start'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -408,13 +408,13 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.studioigor,climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 19
         operation_mode: Heat
 
 - alias: 'Clima Pomeriggio stop'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -429,13 +429,13 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 18
         operation_mode: Heat
 
 - alias: 'Clima Sera start'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -450,13 +450,13 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.studioigor,climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 19,5
         operation_mode: Heat
 
 - alias: 'Clima Sera stop'
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -471,7 +471,7 @@
       - fri
   action:
     - service: climate.set_temperature
-      entity_id: [climate.studioigor,climate.bagno_nikyigor_bagnonikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.salabonsai_salabonsai,climate.salatelevisione_salatelevisione,climate.stanzaigorniky_stanzaigorniky]
+      entity_id: [climate.studioigor,climate.bagno_nikyigor,climate.bagnomadda,climate.cucina,climate.madda,climate.design,climate.sala_bonsai,climate.TV_televisione,climate.stanza_igorniky]
       data:
         temperature: 18
         operation_mode: Heat

@@ -32,7 +32,7 @@
           - automation.clima_pomeriggio_stop
           - automation.clima_sera_start
           - automation.clima_sera_stop
-          - automation.apre_tapp__madda_0700
+          - automation.apre_tapp_madda_0700
           - automation.apre_tapp_bagno_madda_0700
           - automation.chiude_tapp_madda_2200
           - automation.chiude_tapp_madda_2300
@@ -52,12 +52,12 @@
     view: yes
     icon: mdi:thermometer-lines
     entities:
-      - climate.bagno_nikyigor_bagnonikyigor
+      - climate.bagno_nikyigor
       - climate.bagnotaverna_bagnotaverna 
-      - climate.salatelevisione_salatelevisione
+      - climate.TV_televisione
       - climate.sala_bonsai
       - climate.sgabuzzino_sgabuzzino
-      - climate.stanzaigorniky_stanzaigorniky
+      - climate.stanza_igorniky
       - climate.stanza_ospiti_stanza_ospiti
       - climate.studio_nico_studionico
       - climate.studioigor
@@ -93,7 +93,7 @@
       - light.lampada_tiffany
       - light.hue_color_wifi
       - light.hue_color_tele
-      - climate.salatelevisione_salatelevisione
+      - climate.TV_televisione
       - climate.sala_bonsai
       - climate.design
       - media_player.tv_sala
@@ -124,7 +124,7 @@
     entities:
       - switch.luce_int_igorniky
       - switch.presa_igorniky
-      - climate.stanzaigorniky_stanzaigorniky
+      - climate.stanza_igorniky
       - cover.tap_matrimoniale 
 
   stanza_madda:
@@ -167,7 +167,7 @@
     entities:
       - switch.luce_int_bagno
       - switch.luce_int_specchiera
-      - climate.bagno_nikyigor_bagnonikyigor
+      - climate.bagno_nikyigor
       - cover.tap_bagno
 
   bagno_madda:

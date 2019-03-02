@@ -12,8 +12,29 @@ homeassistant:
   customize_glob: !include includes/switch_glob.yaml
 cover: !include includes/covers.yaml
 
+system_health:
 # Enables the frontend
 frontend:
+cloud:
+  alexa:
+    filter:
+#      include_entities:
+#        - light.kitchen
+#      include_domains:
+#        - light.kitchen_left
+#        - switch
+      exclude_entities:
+#        - binary_sensor.*
+        - group.sensori
+    entity_config:
+      switch.luce_faretto_divanoigor:
+        name: divano Igor
+        description: faretti del divano di Igor
+      switch.luce_faretto_divanoniki:
+        name: divano Nicoletta
+        description: faretti del divano di Niky
+#      switch.luce_*:
+#        display_categories: LUCI
 
 zoneminder:
   host: '192.168.1.100'
@@ -102,7 +123,6 @@ script: !include includes/scripts.yaml
 maxcube:
   gateways:
     - host: 192.168.1.167
-
 climate:
   - platform: generic_thermostat
     name: studioigor
@@ -111,7 +131,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -124,7 +145,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -137,7 +159,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -150,7 +173,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -163,7 +187,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -176,7 +201,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -189,7 +215,8 @@ climate:
     min_temp: 15
     max_temp: 21
     target_temp: 19
-    tolerance: 0.3
+    cold_tolerance: 0.3
+    hot_tolerance: 0
     min_cycle_duration:
       seconds: 5
     keep_alive:
@@ -215,7 +242,7 @@ light:
 media_player:
  -  platform: cast
     host: 192.168.1.173
-    name: Chromecast
+#    name: Chromecast
  -  platform: samsungtv
     host: 192.168.1.177
     name: TV Sala
