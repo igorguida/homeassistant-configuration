@@ -114,9 +114,9 @@
       - switch.luce_int_libreria
 #      - switch.luce_int_rgb
       - switch.luce_int_nuovoingresso
-      - zwave._
-      - zwave.__3
-      - zwave.__8
+#      - zwave._
+#      - zwave.__3
+#      - zwave.__8
 
   stanza_niky_igor:
     name: Camera Niky Igor
