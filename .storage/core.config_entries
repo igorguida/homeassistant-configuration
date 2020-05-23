@@ -8,9 +8,14 @@
                     "usb_path": "/dev/ttyUSB0"
                 },
                 "domain": "zwave",
-                "entry_id": "4d43813d900a491ca192a6e1e600b202",
+                "entry_id": "2a58f0c996dc46daa78c770dfb3f079f",
+                "options": {},
                 "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Z-Wave (import from configuration.yaml)",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -18,32 +23,164 @@
                 "data": {
                     "bridge_id": "001788FFFE231C5A",
                     "host": "192.168.1.183",
-                    "username": "eUBfy0Ebv54B23s0SfIMoDvvV5KDMcyMk9p8-kxM"
+                    "username": "ILTr-GbPYlYzKVWpEHsYj2N-pgqT6GbH5rmt63Xk"
                 },
                 "domain": "hue",
-                "entry_id": "85d421e0400546b5877d0699ffecc8af",
+                "entry_id": "715964ddb94b4634a0a78fa3547b6917",
+                "options": {},
                 "source": "discovery",
+                "system_options": {
+                    "disable_new_entities": false
+                },
                 "title": "Philips hue",
+                "unique_id": "001788231c5a",
                 "version": 1
             },
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "udn": "uuid:7b9098be-89a2-10ff-9a5e-b0eabca0da70"
+                    "controller": {
+                        "host": "192.168.1.161",
+                        "password": "Teknopass2017",
+                        "port": 8443,
+                        "site": "default",
+                        "username": "admin",
+                        "verify_ssl": false
+                    }
                 },
-                "domain": "upnp",
-                "entry_id": "418fc1573713485e860c2cd26eb574f7",
-                "source": "discovery",
-                "title": "UPnP/IGD",
+                "domain": "unifi",
+                "entry_id": "102e146eaa1c45fbb3b40d873399ae60",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Default",
+                "unique_id": null,
                 "version": 1
             },
             {
-                "connection_class": "local_push",
-                "data": {},
-                "domain": "cast",
-                "entry_id": "4215030905604c26aef900f4b5081539",
-                "source": "discovery",
-                "title": "Google Cast",
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "cJaRXr-yY4I:APA91bGM-5q4OqwcGBgqAMB71g11cNtb-2kpUIib7tQsjvmbceYhP5V2ir5aLQf8Dv4S1h8tjL3acTAGUBiVdLgu4PKGxNrQb1jT5nZgzazDiz8EfW4KE-BevMRcbZ-Azmm-vsdbtU1P",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "7784f9ed9f26407eb5b694347fa6d2c5",
+                    "device_name": "iPhone di Igor",
+                    "manufacturer": "Apple",
+                    "model": "iPhone 11 Pro",
+                    "os_name": "iOS",
+                    "os_version": "13.4.1",
+                    "secret": "60b676063615c5a0912324f5bb109297baac1d55ee274362b13300f2c261cdaf",
+                    "supports_encryption": true,
+                    "user_id": "80d935600b5746b18b0f25a6b440f075",
+                    "webhook_id": "7e26aff48f2302e21a904b9af257ddd64d536e5a3ed9c7fde0cf24c05f66f1db"
+                },
+                "domain": "mobile_app",
+                "entry_id": "49851eab104140ae8e72e10dbff32ae7",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPhone di Igor",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "cM3Bt4RtkiM:APA91bFvsWgDp_LkDwtNscUBChQlzllRW1s41aj5KkftkBEY1TkiSRwkFSS_sRHitcj3hycpNO18QaFnY7d1cWswQPogFDB5pxxijyHNs_g9pazkwPmcP8qVWOlVDL2nPL0-p6Qo_PDN",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "82a2b7b0257f4a6598cbc81da8cc2ccf",
+                    "device_name": "iPhone di Nicoletta",
+                    "manufacturer": "Apple",
+                    "model": "iPhone SE",
+                    "os_name": "iOS",
+                    "os_version": "13.5",
+                    "secret": "ee43aabcac36fb1f83ca9f8bef0f37fbab218c18a2d42ee6c0243703416554b8",
+                    "supports_encryption": true,
+                    "user_id": "41c057e2be694d8e9a61a4c46d862e49",
+                    "webhook_id": "e30a1727c4908cc37d95f08fc0396a3ffa837561b2c84dd7beaf9c0d637c268c"
+                },
+                "domain": "mobile_app",
+                "entry_id": "753a6d8660654f7dac43560ebd69e7bc",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPhone di Nicoletta",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "e4yIUEFsHwo:APA91bH82tCqm9-MzEcYCvYuNxQHl1LYAc7Mcsv8R7haMIWxxZTo12-nUGqyAhBp1PnORnHt2oRzXg3elbtFeyCw4Y7xL8ltImH0KCoc_lBLAC_zDEVM-rdYlfsBp1qevcnWSQmF9aL0",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "57d3c0697e6848a290e497ca07174fdc",
+                    "device_name": "iPhone di Madda",
+                    "manufacturer": "Apple",
+                    "model": "iPhone 7",
+                    "os_name": "iOS",
+                    "os_version": "13.4.1",
+                    "secret": "6864201608a2dc5f1aa2b3c2c788c6d0408aeeea58c818c2fc24ba798a1883ef",
+                    "supports_encryption": true,
+                    "user_id": "2be77cf219994c3cb95fcb4f6372704d",
+                    "webhook_id": "e62ad44e7dba24b6a3204a653729b43941df4a5c0c844c18f2aae0b1cf87dda5"
+                },
+                "domain": "mobile_app",
+                "entry_id": "d644b9d268e643bdb604fae9606690f4",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPhone di Madda",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {},
+                    "app_id": "com.epg.hassapp",
+                    "app_name": "HassApp",
+                    "app_version": "1.2.5",
+                    "device_id": "c687fe4201b84335be8e306a5b869413",
+                    "device_name": "iPhone di Igor",
+                    "manufacturer": "Apple, Inc",
+                    "model": "iPhone12,3",
+                    "os_name": "iOS",
+                    "os_version": "13.3.1",
+                    "supports_encryption": false,
+                    "user_id": "80d935600b5746b18b0f25a6b440f075",
+                    "webhook_id": "ffc6839f5982aea75a6728dab1665bf96a9c08e74320adfb00747418fbbb28d2"
+                },
+                "domain": "mobile_app",
+                "entry_id": "0c1926c2d2a44fa59b205f0ecf0778a8",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPhone di Igor",
+                "unique_id": null,
                 "version": 1
             }
         ]
