@@ -1,6 +1,6 @@
 camera:
   - platform: generic
-    still_image_url: http://192.168.1.115:81/snapshot.cgi?user=admin&pwd=c4mb14t4&
+    still_image_url: http://192.168.1.115:81/snapshot.cgi?user=admin&pwd=&
 #    stream_source: rtsp://192.168.1.114:10554/Streaming/channels/101
 #    name: Giardino
 #    username: admin
