@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "editable": true,
@@ -21,10 +21,10 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 24.6,
+                    "current_temperature": 24.3,
                     "friendly_name": "studioigor",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -37,21 +37,21 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "9ae1326d5ae7468fbb7b65953d5366e2",
+                    "id": "4b91abe9e0914c64814a594622d995b5",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.studioigor",
                 "last_changed": "2020-05-20T22:55:55.620387+00:00",
-                "last_updated": "2020-05-23T12:29:33.813755+00:00",
+                "last_updated": "2020-05-24T20:02:00.767971+00:00",
                 "state": "heat"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 23.6,
+                    "current_temperature": 23.2,
                     "friendly_name": "madda",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -64,21 +64,21 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "e0efb4371d484c868d65163e134e6688",
+                    "id": "fca1c0059efa442dad12d1f9753377a9",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.madda",
                 "last_changed": "2020-05-20T22:55:55.621972+00:00",
-                "last_updated": "2020-05-23T12:29:53.754154+00:00",
+                "last_updated": "2020-05-24T20:01:28.762939+00:00",
                 "state": "heat"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 24.7,
+                    "current_temperature": 24.3,
                     "friendly_name": "bagnomadda",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -91,21 +91,21 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "d401bd5a169c4e9d992b10ace7a48fcd",
+                    "id": "3d6a52b3c8b14948a9c2e0a2642267c6",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.bagnomadda",
                 "last_changed": "2020-05-20T22:55:55.623672+00:00",
-                "last_updated": "2020-05-23T12:29:43.200076+00:00",
+                "last_updated": "2020-05-24T19:52:38.186845+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 22.9,
+                    "current_temperature": 23.1,
                     "friendly_name": "cucina",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -118,21 +118,21 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "9a401961c3954542aa0273b2b8dbd0c1",
+                    "id": "aab1c7e64a6742e9beaedb3760edd671",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.cucina",
                 "last_changed": "2020-05-20T22:55:55.625442+00:00",
-                "last_updated": "2020-05-23T11:55:09.198939+00:00",
+                "last_updated": "2020-05-24T19:47:29.205350+00:00",
                 "state": "heat"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 23.2,
+                    "current_temperature": 22.8,
                     "friendly_name": "design",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -145,18 +145,18 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "029c4b6eba904e93aaf344501861eb66",
+                    "id": "8308840843794717844f9fb923e23289",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.design",
                 "last_changed": "2020-05-20T22:55:55.627082+00:00",
-                "last_updated": "2020-05-23T12:29:55.361447+00:00",
+                "last_updated": "2020-05-24T20:01:12.370544+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "current_temperature": null,
@@ -183,10 +183,10 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 23.8,
+                    "current_temperature": 23.4,
                     "friendly_name": "primopiano",
                     "hvac_action": "idle",
                     "hvac_modes": [
@@ -199,75 +199,75 @@
                     "temperature": 19.0
                 },
                 "context": {
-                    "id": "2b056469a6b24d7395756b2bf2711ef4",
+                    "id": "3ad23825aa6947c9a3f6fc722bee2205",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.primopiano",
                 "last_changed": "2020-05-20T22:55:55.630528+00:00",
-                "last_updated": "2020-05-23T12:29:03.615199+00:00",
+                "last_updated": "2020-05-24T20:00:17.605355+00:00",
                 "state": "idle"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Spegni luci HUE 9:01",
                     "id": "spegni_luci_hue",
-                    "last_triggered": "2020-05-23T07:00:00.368745+00:00"
+                    "last_triggered": "2020-05-24T07:00:00.045338+00:00"
                 },
                 "context": {
-                    "id": "027db74acc244cdb9bc041112d0c3753",
+                    "id": "22fb212fb58d466bbfe1ab17967ffd61",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.spegni_luci_hue_9_01",
                 "last_changed": "2020-05-20T22:55:56.899564+00:00",
-                "last_updated": "2020-05-23T07:00:00.369056+00:00",
+                "last_updated": "2020-05-24T07:00:00.045673+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Spegni luci 9:00",
                     "id": "spegni_luci_altre",
-                    "last_triggered": "2020-05-23T07:00:01.489849+00:00"
+                    "last_triggered": "2020-05-24T07:00:00.706936+00:00"
                 },
                 "context": {
-                    "id": "9f89311b7b394d17aa5f433075d7c1f2",
+                    "id": "805dd458aee84928b19de75d24ae74bf",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.spegni_luci_9_00",
                 "last_changed": "2020-05-20T22:55:56.901716+00:00",
-                "last_updated": "2020-05-23T07:00:01.490113+00:00",
+                "last_updated": "2020-05-24T07:00:00.707197+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Spegni luci 12:10",
                     "id": "spegni_luci_altre2",
-                    "last_triggered": "2020-05-23T10:10:01.083416+00:00"
+                    "last_triggered": "2020-05-24T10:10:00.794930+00:00"
                 },
                 "context": {
-                    "id": "ead4ca3ab0ae4aa393b1eef4c3c37415",
+                    "id": "7d5321fc72304455a0cc6e909bfdbb1b",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.spegni_luci_12_10",
                 "last_changed": "2020-05-20T22:55:56.903847+00:00",
-                "last_updated": "2020-05-23T10:10:01.083690+00:00",
+                "last_updated": "2020-05-24T10:10:00.795225+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Chiude tapp Madda 22:00",
@@ -286,7 +286,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Chiude tapp Madda 23:00",
@@ -305,7 +305,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apre tapp  Madda 07:00",
@@ -324,7 +324,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apre tapp Bagno Madda 07:00",
@@ -343,7 +343,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apre tapp Sala Bonsai Giardino 08:00",
@@ -362,7 +362,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apre Bonsai StuIgor Sala 00:15",
@@ -381,7 +381,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Tapp met\u00e0 Sala Bonsai StuIgor 00:16",
@@ -400,7 +400,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apri tapp Matrimoniale 07:00",
@@ -419,7 +419,7 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Apri tapp Bagno 07:00",
@@ -438,21 +438,21 @@
             }
         },
         {
-            "last_seen": "2020-05-23T12:29:58.013247+00:00",
+            "last_seen": "2020-05-24T20:02:02.015100+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Chiude tapp 24:00",
                     "id": "chiudi_taparelle",
-                    "last_triggered": "2020-05-22T21:59:01.146879+00:00"
+                    "last_triggered": "2020-05-23T21:59:00.977854+00:00"
                 },
                 "context": {
-                    "id": "653e2dc9a79640eba346cada585eed62",
+                    "id": "68444d08e6b840f1b7cbbcf3912a93a2",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.chiude_tapp_24_00",
                 "last_changed": "2020-05-20T22:55:56.924825+00:00",
-                "last_updated": "2020-05-22T21:59:01.147181+00:00",
+                "last_updated": "2020-05-23T21:59:00.978146+00:00",
                 "state": "on"
             }
         },

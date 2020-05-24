@@ -170,8 +170,9 @@
                 "via_device_id": null
             },
             {
-                "area_id": null,
+                "area_id": "218b1d08b0244593bc737b1993b9bb35",
                 "config_entries": [
+                    "67835a7cf4634b1bbf248eca6921e5e8",
                     "102e146eaa1c45fbb3b40d873399ae60"
                 ],
                 "connections": [
@@ -183,11 +184,11 @@
                 "entry_type": null,
                 "id": "848db8094d094524a0f9651b468f7973",
                 "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
+                "manufacturer": "GUANGZHOU",
+                "model": "P2",
+                "name": "VideocameraSala",
                 "name_by_user": null,
-                "sw_version": null,
+                "sw_version": "1.9.6.578012beta1",
                 "via_device_id": null
             },
             {
@@ -1113,6 +1114,48 @@
                 "name_by_user": null,
                 "sw_version": "5.45.1.17846",
                 "via_device_id": "abf23f3bbd2d41ea8b6eae9502b51be5"
+            },
+            {
+                "area_id": "218b1d08b0244593bc737b1993b9bb35",
+                "config_entries": [
+                    "ba76a4a61862447590c0faa79cfccbc4"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:71:db:1b:2b:79"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "9ea65bc0a76c4e95b83c426522b7af52",
+                "identifiers": [],
+                "manufacturer": "Manufacturer",
+                "model": "IPC",
+                "name": "Giardino",
+                "name_by_user": null,
+                "sw_version": "V1.0.0.1",
+                "via_device_id": null
+            },
+            {
+                "area_id": "218b1d08b0244593bc737b1993b9bb35",
+                "config_entries": [
+                    "1d4f8774852942c18cb463c325249687"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c4:d6:55:3d:ff:25"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "238627df63c846cb924c31ccf2764c15",
+                "identifiers": [],
+                "manufacturer": "FOSCAM",
+                "model": "FI9851P",
+                "name": "cucina",
+                "name_by_user": null,
+                "sw_version": "2.24.1.143",
+                "via_device_id": null
             }
         ]
     },

@@ -156,31 +156,72 @@
                 "version": 1
             },
             {
-                "connection_class": "cloud_push",
+                "connection_class": "local_poll",
                 "data": {
-                    "app_data": {},
-                    "app_id": "com.epg.hassapp",
-                    "app_name": "HassApp",
-                    "app_version": "1.2.5",
-                    "device_id": "c687fe4201b84335be8e306a5b869413",
-                    "device_name": "iPhone di Igor",
-                    "manufacturer": "Apple, Inc",
-                    "model": "iPhone12,3",
-                    "os_name": "iOS",
-                    "os_version": "13.3.1",
-                    "supports_encryption": false,
-                    "user_id": "80d935600b5746b18b0f25a6b440f075",
-                    "webhook_id": "ffc6839f5982aea75a6728dab1665bf96a9c08e74320adfb00747418fbbb28d2"
+                    "host": "192.168.1.85",
+                    "name": "FisheyeSala",
+                    "password": "c4mb14t4",
+                    "port": 80,
+                    "username": "admin"
                 },
-                "domain": "mobile_app",
-                "entry_id": "0c1926c2d2a44fa59b205f0ecf0778a8",
-                "options": {},
-                "source": "registration",
+                "domain": "onvif",
+                "entry_id": "67835a7cf4634b1bbf248eca6921e5e8",
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "udp"
+                },
+                "source": "user",
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "iPhone di Igor",
-                "unique_id": null,
+                "title": "VideocameraSala - 48:03:2b:40:08:1b",
+                "unique_id": "48:03:2b:40:08:1b",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.114",
+                    "name": "Giardino",
+                    "password": "c4mb14t4",
+                    "port": 8000,
+                    "username": "admin"
+                },
+                "domain": "onvif",
+                "entry_id": "ba76a4a61862447590c0faa79cfccbc4",
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Giardino - EC:71:DB:1B:2B:79",
+                "unique_id": "EC:71:DB:1B:2B:79",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.113",
+                    "name": "cucina",
+                    "password": "m4dd4d4rky",
+                    "port": 888,
+                    "username": "cucina"
+                },
+                "domain": "onvif",
+                "entry_id": "1d4f8774852942c18cb463c325249687",
+                "options": {
+                    "extra_arguments": "-pred 1",
+                    "rtsp_transport": "tcp"
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "cucina - C4D6553DFF25",
+                "unique_id": "C4D6553DFF25",
                 "version": 1
             }
         ]
