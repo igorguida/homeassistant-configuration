@@ -1156,6 +1156,69 @@
                 "name_by_user": null,
                 "sw_version": "2.24.1.143",
                 "via_device_id": null
+            },
+            {
+                "area_id": "218b1d08b0244593bc737b1993b9bb35",
+                "config_entries": [
+                    "e1096b7d6b9746a5bac2748e7b2c7230"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "55041768201b446885821616257d015a",
+                "identifiers": [
+                    [
+                        "ipp",
+                        "78de41d5-cf20-47e1-cd4b-f246e7e1896e"
+                    ]
+                ],
+                "manufacturer": "Pantum",
+                "model": "P2500W series",
+                "name": "Pantum",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": "218b1d08b0244593bc737b1993b9bb35",
+                "config_entries": [
+                    "c73875c75ae34ad5bf1d7111615ac5d9"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cd:dd:77:7a:d7:8c"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "65496b410d40473388afcd982c8ef984",
+                "identifiers": [],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Bridge",
+                "name": "HASS Bridge MR3E",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c73875c75ae34ad5bf1d7111615ac5d9"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:02:e1:a1:d4:ce"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "b49ddf25ec7e404fbe809b82f20bd97f",
+                "identifiers": [],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Bridge",
+                "name": "HASS Bridge MR3E",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
             }
         ]
     },

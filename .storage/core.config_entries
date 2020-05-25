@@ -223,6 +223,90 @@
                 "title": "cucina - C4D6553DFF25",
                 "unique_id": "C4D6553DFF25",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "base_path": "/printers/ipp",
+                    "host": "192.168.1.131",
+                    "name": "P2500W series[080820]",
+                    "port": 631,
+                    "ssl": false,
+                    "uuid": "78de41d5-cf20-47e1-cd4b-f246e7e1896e",
+                    "verify_ssl": false
+                },
+                "domain": "ipp",
+                "entry_id": "e1096b7d6b9746a5bac2748e7b2c7230",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "P2500W series[080820]",
+                "unique_id": "78de41d5-cf20-47e1-cd4b-f246e7e1896e",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.100",
+                    "name": "LEXMARK_ultima @ QCustomGuida"
+                },
+                "domain": "ipp",
+                "entry_id": "8bf37571f1124ce788b66687bdd2619f",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "1d4849b1-0ecd-319d-4dc7-4d250efc0851",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "name": "HASS Bridge MR3E",
+                    "port": 51828
+                },
+                "domain": "homekit",
+                "entry_id": "c73875c75ae34ad5bf1d7111615ac5d9",
+                "options": {
+                    "auto_start": true,
+                    "filter": {
+                        "exclude_domains": [],
+                        "exclude_entities": [
+                            "switch.vuoto",
+                            "switch.sipuoriconfigurare_5",
+                            "switch.sipuoriconfigurare_4",
+                            "switch.sipuoriconfigurare_3",
+                            "switch.daconfigurare3",
+                            "switch.daconfigurare2",
+                            "switch.daconfigurare"
+                        ],
+                        "include_domains": [
+                            "alarm_control_panel",
+                            "climate",
+                            "cover",
+                            "light",
+                            "lock",
+                            "media_player",
+                            "switch",
+                            "vacuum",
+                            "water_heater"
+                        ],
+                        "include_entities": []
+                    },
+                    "safe_mode": false,
+                    "zeroconf_default_interface": false
+                },
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "HASS Bridge MR3E:51828",
+                "unique_id": null,
+                "version": 1
             }
         ]
     },

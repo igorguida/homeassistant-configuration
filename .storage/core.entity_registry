@@ -2675,6 +2675,38 @@
                 "supported_features": 2,
                 "unique_id": "C4D6553DFF25_1",
                 "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": "e1096b7d6b9746a5bac2748e7b2c7230",
+                "device_class": "timestamp",
+                "device_id": "55041768201b446885821616257d015a",
+                "disabled_by": "integration",
+                "entity_id": "sensor.pantum_uptime",
+                "icon": null,
+                "name": null,
+                "original_icon": "mdi:clock-outline",
+                "original_name": "Pantum Uptime",
+                "platform": "ipp",
+                "supported_features": 0,
+                "unique_id": "78de41d5-cf20-47e1-cd4b-f246e7e1896e_uptime",
+                "unit_of_measurement": null
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": "e1096b7d6b9746a5bac2748e7b2c7230",
+                "device_class": null,
+                "device_id": "55041768201b446885821616257d015a",
+                "disabled_by": null,
+                "entity_id": "sensor.pantum",
+                "icon": null,
+                "name": null,
+                "original_icon": "mdi:printer",
+                "original_name": "Pantum",
+                "platform": "ipp",
+                "supported_features": 0,
+                "unique_id": "78de41d5-cf20-47e1-cd4b-f246e7e1896e_printer",
+                "unit_of_measurement": null
             }
         ]
     },
