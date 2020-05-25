@@ -640,7 +640,7 @@
                 "created_at": "2019-12-10T21:48:24.152687+00:00",
                 "id": "4fe4c2fc74e147c79ecd0c6fa948e45d",
                 "jwt_key": "acf5bc487ee95ce4028bd1b5192b05aa59fa78699cf2c94f43ac8ce64b1a3999b1a1537db2964a284e641d1dede8e19bb7904606966a649d3505557537b4657f",
-                "last_used_at": "2020-05-25T06:49:49.639951+00:00",
+                "last_used_at": "2020-05-25T08:29:57.376460+00:00",
                 "last_used_ip": "192.168.1.62",
                 "token": "392af95212c683587f77203bde2cb567863e93fdd12e4c086a6a4cf159258c649aaba97d6db3bb9a167d746747ea3f599fb74c81539ac7ddca47b5ca749aa0d4",
                 "token_type": "normal",
